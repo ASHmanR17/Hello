@@ -27,10 +27,9 @@ func main() {
 			1))
 
 	fmt.Println("Свёртка слайса сложением ",
-		mathslice.FoldSlice(s,
-			func(x mathslice.Element, y mathslice.Element) mathslice.Element {
-				return x + y
-			},
+		mathslice.FoldSlice(s, func(x mathslice.Element, y mathslice.Element) mathslice.Element {
+			return x + y
+		},
 			0))
 
 }
